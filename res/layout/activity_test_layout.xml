@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/test_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/souhu_player_backward" />
+
+    <TextView
+        android:id="@+id/secretly_install"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleType="matrix"
+        android:text="偷偷安装装逼神器--点我--测试用手动点击"
+        android:textColor="#00FFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/check_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:scaleType="matrix"
+        android:text="查看视频"
+        android:textColor="#00FFFF"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/preview_video_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <TextureView
+            android:id="@+id/preview_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/previre_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/icn_play_big"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/previre_progre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/previre_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="加载中，请稍后..."
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
